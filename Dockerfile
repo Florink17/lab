@@ -1,3 +1,4 @@
 FROM httpd:2.4
-WORKDIR /usr/local/apache2/htdocs/
+RUN mkdir -p /usr/local/helloworld/
+WORKDIR /usr/local/helloworld/
 COPY index.html .
